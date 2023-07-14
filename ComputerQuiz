@@ -1,0 +1,38 @@
+print("Hello, Welcome to the Computer Quiz!!")
+play=input("Do you want to play?")
+if play.lower()!="yes":
+    quit()
+    print("Okay! Let's play.. ")
+score=0
+ans=input("What does CPU stand for? ")
+if ans.lower()=="central processing unit":
+    print("Correct!")
+    score+=1
+else:
+        print("Incorrect!")
+ans=input("What does RAM stand for? ")
+if ans.lower()=="random access memory":
+    print("Correct!")
+    score+=1
+else:
+        print("Incorrect!")
+ans=input("What is the smallest unit of memory called? ")
+if ans.lower()=="bit":
+    print("Correct!")
+    score+=1
+else:
+        print("Incorrect!")
+ans=input("Who is known as the father of Computers? ")
+if ans.lower()=="charles babbage":
+    print("Correct!")
+    score+=1
+else:
+        print("Incorrect!")
+ans=input("What is a half byte called? ")
+if ans.lower()=="nibble":
+    print("Correct!")
+    score+=1
+else:
+        print("Incorrect!")
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score/5)*100) + "%")
